@@ -11,7 +11,7 @@ class PropertyBasedTests extends PropSpec with Matchers with PropertyChecks {
 //    })
 //  }
 
-  property("some prop") {
+  property("simple prop to get this working") {
     forAll { (n: Int) =>
       n.abs should be >= 0
     }

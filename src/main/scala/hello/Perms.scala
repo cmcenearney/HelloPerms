@@ -1,5 +1,7 @@
 package hello
 
+import scala.collection.mutable.ListBuffer
+
 object Perms {
 
   def simpleFunc(): String =
@@ -22,6 +24,29 @@ object Perms {
         yield c + p
       }
     }
+  }
+
+  def javaLike(s: String): List[String] = {
+    def removeOne[T](l : List[T], i: T): List[T] = {
+      val results = ListBuffer[T]()
+      results.re
+      for(el <- l){
+        if (el == i)
+      }
+
+    }
+    val results = ListBuffer[String]()
+    def go(s: String, els: List[Char], results: ListBuffer[String]): Unit = {
+      if (els.isEmpty) {
+        results += (s)
+        return
+      } else {
+        for (c <- els) {
+          go(s+c, els.toArray.(c), results)
+        }
+      }
+    }
+    results.toList
   }
 
 //  def permsRec3(s: String): List[String] = {

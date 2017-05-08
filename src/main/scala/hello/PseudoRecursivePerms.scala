@@ -3,7 +3,7 @@ package hello
 import scala.collection.mutable
 
 /*
-Emulates depth-first search of the permutation space, while never expanding more than nodes than a single line from root to leaf.
+Emulates depth-first search of the permutation space, while never expanding more than nodes than a single path from root to leaf.
  */
 class PseudoRecursivePerms[A](elements: List[A]) {
 
